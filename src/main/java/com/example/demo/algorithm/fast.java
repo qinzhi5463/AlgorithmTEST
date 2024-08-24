@@ -39,7 +39,7 @@ public class fast {
         if (left < right) {
             int key = fast(array, left, right);
             huidiao(array,left,key-1);//前部分
-            huidiao(array,key+1,right);//后部分
+            huidiao(array,key+1,right);//后部分  此处的right被传入的right决定，如果说传入的是中间值的位置减一的话，就合理了
         }
 
     }
